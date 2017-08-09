@@ -1,0 +1,19 @@
+{
+  "name": "pi-node-server",
+  "version": "1.0.0",
+  "description": "Homebase. Node Server for Pi",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plugininnovations/pi-node-server.git"
+  },
+  "author": "Plugin Innovations",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plugininnovations/pi-node-server/issues"
+  },
+  "homepage": "https://github.com/plugininnovations/pi-node-server#readme"
+}

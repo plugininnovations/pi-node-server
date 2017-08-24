@@ -2,9 +2,11 @@
   "name": "pi-node-server",
   "version": "1.0.0",
   "description": "Homebase. Node Server for Pi",
-  "main": "app.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "gulp",
+    "start": "gulp",
+    "build-css": "node-sass --include-path scss scss/main.scss public/stylesheets/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,37 @@
   "bugs": {
     "url": "https://github.com/plugininnovations/pi-node-server/issues"
   },
-  "homepage": "https://github.com/plugininnovations/pi-node-server#readme"
+  "homepage": "https://github.com/plugininnovations/pi-node-server#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.2",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cssnano": "^3.10.0",
+    "express": "^4.15.4",
+    "logger": "0.0.1",
+    "mongoose": "^4.11.6",
+    "morgan": "^1.8.2",
+    "node-sass-middleware": "^0.11.0",
+    "pug": "^2.0.0-rc.3",
+    "serve-favicon": "^2.4.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
+    "gulp": "latest",
+    "gulp-babel": "^7.0.0",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-sync": "^0.1.4",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "node-sass": "latest",
+    "nodemon": "latest"
+  }
 }
